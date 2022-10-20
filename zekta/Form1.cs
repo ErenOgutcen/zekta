@@ -20,15 +20,17 @@ namespace zekta
         private void button1_Click(object sender, EventArgs e)
         {
             double euro;
+            double graltin;
             double dolarAltinGr;
             double dolarmiktari;
             double ZekatMiktari;
             double TLAltinGr;
             double toplamMalMiktariAltinGr;
+            graltin = Convert.ToDouble(textBox4.Text);
             euro = Convert.ToDouble(textBox3.Text) / 53;
             TLAltinGr = Convert.ToDouble(textBox1.Text) / 975;
             dolarAltinGr = Convert.ToDouble(textBox2.Text) / 52;
-            toplamMalMiktariAltinGr = TLAltinGr + dolarAltinGr + euro;
+            toplamMalMiktariAltinGr = TLAltinGr + dolarAltinGr + euro+graltin;
 
 
 
